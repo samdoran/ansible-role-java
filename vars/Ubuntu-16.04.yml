@@ -1,0 +1,7 @@
+# Available packages:
+#  - java
+#  - openjdk-8-jdk
+#  - openjdk-9-jdk
+
+java_packages:
+  - openjdk-8-jdk

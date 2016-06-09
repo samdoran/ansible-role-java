@@ -1,0 +1,7 @@
+- name: RHEL | Install Java
+  yum:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ java_packages }}"
+  tags:
+    - java

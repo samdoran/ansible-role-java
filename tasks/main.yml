@@ -1,0 +1,9 @@
+- name: Include distribution specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+  when: ansible_distribution != 'Ubuntu'
+
+- name: Include variables for Ubuntu
+  include_vars: "{{ ansible_distribution }}-{{ ansible_distribution_version }}"
+  when: ansible_distribution == 'Ubuntu'
+
+- include: "install-{{ ansible_os_family }}.yml"
