@@ -1,6 +1,7 @@
 Java
 =========
 [![Galaxy](https://img.shields.io/badge/galaxy-samdoran.java-blue.svg?style=flat)](https://galaxy.ansible.com/samdoran/java)
+[![Build Status](https://travis-ci.org/samdoran/ansible-role-java.svg?branch=master)](https://travis-ci.org/samdoran/ansible-role-java)
 
 Install Java.
 
