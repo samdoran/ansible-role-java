@@ -1,6 +1,6 @@
----
 - hosts: all
   remote_user: vagrant
-  become: True
+  become: yes
+
   roles:
     - java
