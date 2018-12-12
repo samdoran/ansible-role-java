@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: java
   author: Sam Doran
   description: "Install Java"
   company: Ansible by Red Hat
