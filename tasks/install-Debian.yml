@@ -1,3 +1,17 @@
+# https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=863199
+- name: DEBIAN | Create man directory to account for upstream bug
+  file:
+    path: /usr/share/man/man1
+    state: directory
+    owner: root
+    group: root
+    mode: '0755'
+  when:
+    - ansible_facts.distribution == 'Ubuntu'
+    - ansible_facts.distribution_version is version_compare('18', '>=')
+  tags:
+    - java
+
 - name: DEBIAN | Install Java
   apt:
     name: "{{ java_packages }}"
