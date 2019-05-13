@@ -1,7 +1,7 @@
 - name: DEBIAN | Install Java
   apt:
-    update_cache: yes
     name: "{{ java_packages }}"
     state: latest
+    update_cache: yes
   tags:
     - java

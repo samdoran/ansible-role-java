@@ -1,4 +1,5 @@
-- hosts: all
+- name: Test Java role
+  hosts: all
   become: yes
 
   tasks:
@@ -9,3 +10,12 @@
 
     - import_role:
         name: java
+
+- name: Validate Java role
+  hosts: all
+
+  tasks:
+    - name: Ensure Java was installed
+      command: java -version
+      changed_when: no
+      register: java_test_result
