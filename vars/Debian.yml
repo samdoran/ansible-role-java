@@ -1,7 +1,6 @@
 # Available packages:
 #   - default-jdk - Standard Java or Java compatible Development Kit
 #   - default-jre - Standard Java or Java compatible Runtime
-#   - default-jre-headless - Standard Java or Java compatible Runtime (headless)
 #   - openjdk-7-dbg - Java runtime based on OpenJDK (debugging symbols)
 #   - openjdk-7-demo - Java runtime based on OpenJDK (demos and examples)
 #   - openjdk-7-doc - OpenJDK Development Kit (JDK) documentation
