@@ -13,9 +13,13 @@
 
 - name: Validate Java role
   hosts: all
+  gather_facts: no
 
   tasks:
     - name: Ensure Java was installed
       command: java -version
       changed_when: no
       register: java_test_result
+
+    - debug:
+        var: java_test_result.stderr_lines
